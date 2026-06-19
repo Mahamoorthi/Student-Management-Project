@@ -1,0 +1,34 @@
+.programs{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    margin-top: 30px;
+    
+}
+.program img{
+     width: 100%;
+     border-radius: 10px;
+     display: block;   
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+    
+}
+.img1{
+    border-radius: 30px;
+}
+ 
+.caption{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.caption img{
+       width: 50px;
+}
+.para{
+    font-size: 20px;
+}
