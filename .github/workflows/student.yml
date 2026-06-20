@@ -1,0 +1,23 @@
+name: CI Check for Todo App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Confirm index.html exists
+        run: |
+          if [ -f index.html ]; then
+            echo "index.html found! Check passed."
+          else
+            echo "index.html missing!"
+            exit 1
+          fi
